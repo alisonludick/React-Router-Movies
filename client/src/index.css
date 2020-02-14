@@ -39,7 +39,9 @@ body {
 }
 
 .saved-list {
-	background-color: #fff;
+  max-width: calc(65% - 5px);
+  flex-basis: calc(65% - 20px); 
+	background-color: lavender;
 	border: 0;
 	box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
 		0 2px 4px rgba(0, 0, 0, 0.24);
@@ -56,7 +58,6 @@ body {
 .saved-list h3 {
   margin-right: 10px;
   text-decoration: none;
-
 }
 
 .saved-movie {
@@ -73,18 +74,21 @@ body {
 
 .save-wrapper {
 	position: relative;
-	width: 75%;
-	margin: 1rem auto;
+	width: 65%;
+  margin: 1rem auto;
 }
 
 .save-button {
-  position: absolute;
-	top: 25px;
-	right: 25px;
+  max-width: calc(25% - 5px);
+  flex-basis: calc(25% - 20px); 
+  position: relative;
+	top: 0;
+	right: -310px;
 	border: 1px solid grey;
 	padding: 5px 10px;
   background-color: mediumpurple;
-  text-align: center;
+  text-align: center; 
+ 
 }
 
 .save-button:hover {
@@ -93,6 +97,6 @@ body {
 }
 
 .home-button {
-	padding: 5px 10px;
+	padding: 10px 10px; 
 	background-color: lightskyblue;
 }
